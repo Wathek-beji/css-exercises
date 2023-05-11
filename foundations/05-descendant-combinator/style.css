@@ -1,0 +1,49 @@
+/* using type selector */
+div p{
+  background-color: yellow;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* using class selector */
+.container .text{
+  background-color: yellow;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* using a combination of class and type selectors */
+div .text{
+  background-color: yellow;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* using a combination of class and type selectors */
+.container p{
+  background-color: yellow;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* type first + combination of type and class (more specific) */
+div p.text{
+  background-color: yellow;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* class first + combination of type and class (more specific) */
+.container p.text{
+  background-color: yellow;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* went a little overboard */
