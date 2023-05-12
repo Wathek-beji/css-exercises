@@ -8,16 +8,59 @@ body{
   font-weight: 800;
 }
 
+/* either invert the order of para and small para */
+
+/* .para {
+  font-size: 22px;
+}
+
 .small-para {
   font-size: 14px;
   font-weight: 800;
-}
+} */
+
+/* or specify the small para more */
 
 .para {
   font-size: 22px;
 }
 
+.para.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* either invert the button and confirm rules since they have the same specificity */
+
+/* .button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
 .confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+}  */
+
+/* or add more specificity to the confirm button */
+
+/* .button.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+} */
+
+/* or use the id selector */
+
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +72,24 @@ body{
   font-size: 20px;
 }
 
+
+/* put them on same level of specificity and change the order the child doesn't get overriden */
+
+/* .text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+
 .child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+} */
+
+/* or make the child more specific */
+
+/* .text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
@@ -39,4 +99,23 @@ div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
+} */
+
+div.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
 }
+
+div .child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
